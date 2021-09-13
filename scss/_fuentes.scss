@@ -1,0 +1,67 @@
+$fEstandar1980:18px;
+$tfEstandar: "archivo";
+$tfTitulo: "kufam";
+$fTitulo:57px;
+$fSubTitulo:42px;
+$fFooter:20px;
+$sFti:16px;
+$fSn:60px;
+$fG:80px;
+$fComprar:32px;
+$estilos: (
+	color: "black",
+	centro: "center",
+	tFuente: "40px",
+);
+.titulo{
+	&__h1{
+		font-size: $fTitulo;
+		family:"tfTitulo";
+		text-align: map-get($estilos, centro);
+	}
+	&__h2{
+		font-size:$fSubTitulo;
+		family:"$tfTitulo";
+	}
+}
+
+.footer{
+	&__p{
+		size:$fFooter+2px;
+		family:$tfEstandar;
+	}
+}
+.comprar{
+	font-size:$fComprar;
+	text-align:center;
+}
+.fti{
+	&__p{
+		size:$fFooter+4px;
+	}
+	&__segent{
+		size:$sFti+2px;
+	}
+}
+.fosn{
+	&__h1sn{
+		size:$fSn;
+		family:$tfTitulo;
+	}
+}
+.mensaje{
+	text-align: center;
+	font-size: 20px;
+}
+.mensaje2{
+	text-align: center;
+	font-size: 20px;
+}
+.mensaje3{
+	text-align: center;
+	font-size: 20px;
+}
+.aes{
+	text-align: center;
+	font-size: 28px;
+}

@@ -1,0 +1,97 @@
+/*variables*/
+$fondo:rgb(111, 168, 220);
+$blanco:white;
+$fondoVerde:rgb(66, 165, 24);
+$negro:black;
+$estilos: (
+	negro: "black",
+	blanco: "white",
+	fondo: rgb(111, 168, 220),
+	fondoVerde: rgb(66, 165, 24),
+	verdeOscuro: rgb(56, 118, 29),
+);
+
+.body{
+	background-color:$fondo;
+}
+
+.titulo{
+	&__h1{
+		color: white;
+		background-color:$fondoVerde;
+		border:2px;
+	}
+	&__h2{
+		color: white;
+		background-color:$fondoVerde;
+	}
+}
+.cmv{
+	th{
+		background-color:white;
+	}
+}
+.footer{
+	background-image: linear-gradient(to bottom, rgb(5,4,104), rgb(255,255,255), rgb(172,7,7));
+}
+.parallax {
+  background-image: url("../assets/arg3.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.comprar{
+	border: 10px solid black;
+	background-color:$blanco;	
+}
+.fti{
+	background-image: linear-gradient(to bottom, rgb(5,4,104), rgb(255,255,255), rgb(172,7,7));
+	&__p{
+		color: map-get($estilos, fondo)
+	}
+}
+.fosn{
+	&__h1sn{
+		color: map-get($estilos, blanco);
+	}
+	&__sn{
+		background-color: map-get($estilos, verdeOscuro);
+	}
+}
+.mensaje{
+	border: 10px solid black;
+	background-color: white;
+}
+.mensaje2{
+	border: 10px solid black;
+	background-color: white;
+}
+.mensaje3{
+	border: 10px solid black;
+	background-color: white;
+}
+.fti{
+	&__p{
+		color: black;
+	}
+}
+.fosn{
+	background-image:url(../assets/lib.jpg);
+	background-repeat:no-repeat;
+}
+
+.footsn{
+	background-image: linear-gradient(to bottom, rgb(5,4,104), rgb(255,255,255), rgb(172,7,7));
+}
+.aes{
+	border: 4px solid black;
+	background-color: white;
+}
+.footerU{
+	background-image: linear-gradient(to bottom, rgb(5,4,104), rgb(255,255,255), rgb(172,7,7));
+}
+.footerC{
+	background-image: linear-gradient(to bottom, rgb(5,4,104), rgb(255,255,255), rgb(172,7,7));
+}

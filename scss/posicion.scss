@@ -1,0 +1,146 @@
+$relative: "relative";
+$h1Top: "55px";
+$auto: "auto";
+$h1Left: "0px";
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+.titulo{
+	&__h1{
+		@include position(relative, $top: 5px, $left: 279px);
+		text-align: center;
+	}
+	&__h2{
+		@include position(relative, $top: -22px, $left: 279px);
+		text-align: center;
+	}
+}
+.carousel-index{
+	@include position(relative, $left: 140px);
+}
+.cmv{
+	th{
+		@include position(relative, $top: 0px, $left: 427px);
+		text-align: center;
+	}
+}
+.footer{
+	img{
+		@include position(relative, $top: 77px);
+	}
+	&__p{
+		@include position(relative, $top: -19px);
+		text-align: center;
+	}
+	&__segen{
+		@include position(absolute, $top: 944px, $left: 1628px);
+		text-align: center;
+	}
+	&__rrss{
+		@include position(absolute, $top: 838px, $left: 1780px);
+	}
+}
+.carousel-tienda{
+	@include position(relative, $top:50px, $left: 475px);
+}
+.comprar{
+	@include position(absolute, $top: 975px, $left: 605px, $right: 611px);
+}
+.mensaje{
+	@include position(relative, $left: -305px);
+}
+.carousel-jugadores{
+	@include position(relative, $top:-126px, $left: 857px);
+	z-index: 2;
+}
+.mensaje2{
+	@include position(relative, $top:-553px, $left: -305px);
+	z-index: 1;
+}
+.mensaje3{
+	@include position(relative, $top:-452px, $left: -305px);
+}
+.fti{
+	&__lft{
+		@include position(relative, $top: 77px);
+	}
+	&__p{
+		@include position(relative, $top: -19px);
+		text-align: center;
+	}
+	&__segent{
+		@include position(absolute, $top: 2617px, $left: 1628px);
+		text-align: center;
+	}
+	&__rrssT{
+		@include position(absolute, $top: 2591px, $left: 1780px);
+	}
+}
+.lib{
+	@include position(absolute, $top:114px, $left: 1361px);
+}
+.lfbsn{
+	@include position(relative, $top:-97px, $left: 847px);
+}
+.ligsn{
+	@include position(relative, $top:-97px, $left: 951px);
+}
+.footsn{
+	&__lfs{
+		@include position(relative, $top: 77px);
+	}
+	&__p{
+		@include position(relative, $top: -19px);
+		text-align: center;
+	}
+	&__segenS{
+		@include position(absolute, $top: 1066px, $left: 1628px);
+		text-align: center;
+	}
+	&__rrssS{
+		@include position(absolute, $top: 1044px, $left: 1780px);
+	}
+}
+.aes{
+	@include position(absolute, $top: 267px, $left: 990px, $right: 590px);
+}
+.fle{
+	@include position(absolute, $top: 355px, $left: 920px);
+}
+.footerU{
+	&__lfu{
+		@include position(relative, $top: 77px);
+	}
+	&__p{
+		@include position(relative, $top: -19px);
+		text-align: center;
+	}
+	&__segenU{
+		@include position(absolute, $top: 887px, $left: 1628px);
+		text-align: center;
+	}
+	&__rrssU{
+		@include position(absolute, $top: 860px, $left: 1780px);
+	}
+}
+.footerC{
+	&__lfc{
+		@include position(relative, $top: 77px);
+	}
+	&__p{
+		@include position(relative, $top: -19px);
+		text-align: center;
+	}
+	&__segenC{
+		@include position(absolute, $top: 778px, $left: 1628px);
+		text-align: center;
+	}
+	&__rrssC{
+		@include position(absolute, $top: 754px, $left: 1780px);
+	}
+}
